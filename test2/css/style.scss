@@ -1,0 +1,471 @@
+$white-color: #ffffff;
+$header-color: #2e2e2e;
+@font-face {
+    font-display: swap;
+    font-family: GothamMedium;
+    src: url(../fonts/GothamMedium.ttf) format("truetype");
+}
+@font-face {
+    font-display: swap;
+    font-family: GothamBook;
+    src: url(../fonts/GothamBook.ttf) format("truetype");
+}
+@font-face {
+    font-display: swap;
+    font-family: GothamLight;
+    src: url(../fonts/GothamLight.ttf) format("truetype");
+}
+@font-face {
+    font-display: swap;
+    font-family: GothamBold;
+    src: url(../fonts/GothamBold.ttf) format("truetype");
+}
+html,
+body {
+    font-family: GothamMedium;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.nav-cl {
+    background-color: $header-color;
+    height: 85px;
+}
+.nav-cl .navbar-nav li .nav-link {
+    font-family: GothamMedium;
+    font-size: 15px;
+    color: $white-color;
+    line-height: 22.5px;
+    margin-right: 16px;
+    &:hover,
+    &:focus {
+        color: $white-color;
+    }
+}
+
+#search {
+    background: transparent url(../images/search.png) no-repeat 9px center;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+    border: none;
+    border-radius: 10em;
+    transition: all 0.5s;
+}
+#search:focus {
+    width: 130px;
+    background-color: #fff;
+    border-color: #66cc75;
+
+    -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+    -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+    box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+}
+
+#search:-moz-placeholder {
+    color: #999;
+}
+#search::-webkit-input-placeholder {
+    color: #999;
+}
+
+#search {
+    width: 15px;
+    color: transparent;
+    cursor: pointer;
+}
+#search:focus {
+    width: 130px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+    outline: none;
+}
+.secp1-sp {
+    color: #2154cf;
+    font-family: GothamBold;
+}
+
+.main-bx {
+    .img-bx {
+        background-color: #2154cf;
+        img {
+            opacity: 0.7;
+        }
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 31px;
+            width: 100%;
+            text-align: center;
+            color: $white-color;
+            text-shadow: 0px 4px 6.96px rgba(0, 0, 0, 0.46);
+        }
+    }
+}
+
+.btn-submit {
+    background-color: #2154cf;
+    width: 136px;
+    height: 48px;
+    font-size: 16px;
+    color: $white-color;
+    &:hover {
+        color: $white-color;
+    }
+}
+.btn-txt {
+    font-size: 11px;
+    color: $white-color;
+    font-family: GothamBook;
+}
+
+.slide-back {
+    background-color: #e7eeff;
+}
+
+.mySlides1,
+.mySlides2 {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    color: $white-color;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+    background-color: black;
+    color: $white-color;
+}
+
+@media (min-width: 576px) {
+    .fm-inpt {
+        width: 47%;
+        max-width: 47%;
+        flex: 0 0 47%;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 69px;
+    }
+    .nav-cl {
+        height: 69px;
+        .menu-btn {
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .main-navbar {
+        position: fixed;
+        display: none;
+        background-color: #2e2e2e;
+        z-index: 22222;
+        top: 0;
+        height: 100%;
+        padding: 15px 16px;
+        opacity: 0.96;
+    }
+    .menu-btn {
+        color: $white-color;
+        font-size: 35px;
+        opacity: 1;
+        &:focus,
+        &:hover {
+            color: $white-color;
+            opacity: 1;
+        }
+    }
+    .main-navbar .navbar-nav li .nav-link {
+        font-size: 10px;
+        color: $white-color;
+    }
+    .d-block-mob {
+        display: block !important;
+        -webkit-transition: visibility 0s, opacity 0.5s linear;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+    .sec-p1 {
+        font-size: 21px;
+        line-height: 1.2;
+        font-family: GothamBook;
+    }
+    .sec-p2 {
+        font-size: 11px;
+        line-height: 1.2;
+        font-family: GothamBook;
+    }
+    .main-bx {
+        margin-bottom: 10px;
+        .img-bx {
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    .cont-txt-1 {
+        font-size: 11px;
+        color: #2e2e2e;
+        line-height: 13.5px;
+        font-family: GothamBook;
+    }
+
+    .form-bx {
+        background-color: #17274c;
+        padding: 30px;
+        .fm-p1 {
+            font-size: 12px;
+            color: #ffffff;
+            line-height: 17px;
+            font-weight: lighter;
+            margin-bottom: 5px;
+        }
+        .fm-p2 {
+            font-size: 25px;
+            color: #ffffff;
+            font-weight: bold;
+            line-height: 27px;
+            padding-bottom: 5px;
+        }
+        label {
+            font-size: 11px;
+            color: #fff;
+            font-family: GothamBook;
+            line-height: 13px;
+        }
+        .invalid-feedback {
+            font-style: italic;
+            font-family: GothamBook;
+            color: #fff;
+            font-size: 8px;
+        }
+        input {
+            height: 26px;
+        }
+    }
+    .main-slide-bx {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .slide-back {
+            padding-bottom: 50px;
+        }
+        img {
+            width: 100%;
+            transform: translateY(-20px);
+        }
+        .sli-d-p1 {
+            font-size: 20px;
+            color: #313540;
+            font-family: GothamBook;
+        }
+        .sli-d-p2 {
+            font-size: 23px;
+            font-family: GothamBold;
+            color: #313540;
+        }
+        .sli-d-p3 {
+            font-size: 11px;
+            line-height: 19px;
+            font-family: GothamBook;
+        }
+        .sli-d-a1 {
+            font-size: 11px;
+            font-family: GothamMedium;
+            color: #fff;
+            background-color: #2154cf;
+            height: 32px;
+            line-height: 2;
+            width: 99px;
+        }
+    }
+    .prev-arrw,
+    .next-arrw {
+        background-color: #2154cf;
+        display: inherit;
+        height: 56px;
+        width: 61px;
+        line-height: 59px;
+        text-align: center;
+    }
+    .div-arrw {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        transform: translateY(-27px);
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 85px;
+    }
+    .sec-p1 {
+        font-size: 30px;
+        color: #313540;
+        line-height: 1.2;
+        font-family: GothamBook;
+    }
+    .sec-p2 {
+        font-size: 16px;
+        color: #313540;
+        font-family: GothamBook;
+        line-height: 1.2;
+    }
+    .main-bx {
+        width: 33%;
+        max-width: 33%;
+    }
+    .cont-txt-1 {
+        font-size: 16px;
+        color: #2e2e2e;
+        line-height: 19px;
+        font-family: GothamBook;
+    }
+    .form-bx {
+        background-color: #17274c;
+        padding: 30px 150px;
+        .fm-p1 {
+            font-size: 17px;
+            color: $white-color;
+            line-height: 17px;
+            font-weight: lighter;
+        }
+        .fm-p2 {
+            font-size: 37px;
+            color: $white-color;
+            font-weight: bold;
+            line-height: 27px;
+            padding-bottom: 25px;
+        }
+        label {
+            font-size: 16px;
+            color: #fff;
+            font-family: GothamBook;
+            line-height: 23px;
+            margin-bottom: 3px;
+        }
+        .invalid-feedback {
+            font-style: italic;
+            font-family: GothamBook;
+            color: #fff;
+        }
+    }
+    .sli-d-p1 {
+        font-size: 33px;
+        line-height: 27px;
+        font-family: GothamBook;
+        color: #313540;
+        padding-bottom: 10px;
+    }
+    .sli-d-p2 {
+        font-size: 40px;
+        color: #313540;
+        font-family: GothamBold;
+        line-height: 31px;
+    }
+    .sli-d-p3 {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: GothamBook;
+        color: #313540;
+        padding-bottom: 20px;
+        padding-right: 42px;
+    }
+    .main-slide-bx {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .slide-back {
+        padding: 130px 20px 80px;
+    }
+    .slide-back-img {
+        position: absolute;
+        transform: translate(-7%, -40%);
+    }
+    .sli-d-a1 {
+        font-size: 16px;
+        font-family: GothamMedium;
+        color: #fff;
+        background-color: #2154cf;
+        height: 48px;
+        line-height: 2;
+        width: 146px;
+    }
+    .prev-arrw,
+    .next-arrw {
+        background-color: #2154cf;
+        display: inherit;
+        height: 56px;
+        width: 61px;
+        line-height: 59px;
+        text-align: center;
+    }
+    .div-arrw {
+        width: auto;
+        display: inline-block;
+        margin-left: 72%;
+        transform: translateY(-27px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-cl .navbar-nav li .nav-link {
+        font-size: 13px;
+        padding: 0 5px;
+    }
+    .main-bx .img-bx p {
+        font-size: 20px;
+    }
+    .form-bx {
+        padding: 30px;
+    }
+    .main-slide-bx {
+        padding-top: 66px;
+        padding-bottom: 31px;
+        width: 100%;
+    }
+    .slide-back {
+        padding: 70px 20px 61px;
+    }
+    .sli-d-p1 {
+        font-size: 31px;
+        line-height: 27px;
+
+        padding-bottom: 0;
+    }
+    .sli-d-p2 {
+        font-size: 31px;
+        line-height: 31px;
+    }
+    .sli-d-p3 {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 2px;
+        padding-right: 0;
+    }
+}
